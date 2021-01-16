@@ -1,0 +1,423 @@
+@import '~materialize-css/dist/css/materialize.min.css';
+
+.chat-wrapper {
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 900px;
+    height: 66vh;
+    background-color:#1E232B;
+}
+.d-flex {
+    display: flex;
+    max-width: 850px;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    position: relative;
+}
+.mt-btn {
+    margin-top: 20px;
+    z-index: 0;
+}
+.toast{
+    background-color: #87BD5A !important;
+}
+.danger {
+    background-color: #C7320E !important;
+}
+.chat-wrapper__item {
+    display: inline-flex;
+    background-color: #69AC79 /* */;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 0;
+    align-items: center;
+    padding: 12px 10px;
+    
+}
+.chat-wrapper__item span {
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+}
+.chat-wrapper__item div {
+    width: 48px;
+    color: #D8C871;
+}
+i.active {
+    color: #F3A438 !important;
+   /*  z-index: -2; */
+
+}
+
+.i-emoji{
+    position: absolute;
+    font-size: 30px;
+    top: 12px;
+    right: -42px;
+    color: rgba(0,0,0, .2);
+    cursor: pointer;
+}
+.i-emoji:hover {
+    color: rgba(0,0,0, .7)
+}
+.emoji-block{
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.emoji-block nav{
+    background-color: #fff;
+}
+.emoji-block.active-emoji {
+    visibility: visible;
+    opacity: 1;
+}
+.bcg-auth{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E232B;
+    color: #FEFCEF;
+}
+strong {
+    color: #F35531;
+}
+
+.bcg-auth .pink {
+    margin-top: 5rem;
+}
+input.yellow-input {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 black !important;
+    color: #FEFCEF;
+}
+input.yellow-input + label {
+    color: #FEFCEF !important;
+}
+input.yellow-input:focus + label {
+    color: #ffeb3b !important;
+}
+input.yellow-input:focus {
+    border-bottom: 3px solid #ffeb3b !important;
+    box-shadow: 0 1px 0 0 transparent  !important;
+}
+input.green-input {
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0 black !important;
+    color: #FEFCEF;
+}
+input.green-input + label {
+    color: #FEFCEF !important;
+}
+input.green-input:focus + label {
+    color: #00E676  !important;
+}
+input.green-input:focus {
+    border-bottom: 3px solid #00E676  !important;
+    box-shadow: 0 1px 0 0 transparent  !important;
+}
+.mt-card {
+    margin-top: 0.5rem;
+}
+.d-none {
+    display: none;
+}
+.tabs {
+    background-color: transparent;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+.tabs ul {
+    overflow: hidden;
+}
+.tabs li {
+    transition: all 0.4s !important;
+}
+.tabs li:last-child {
+    border-right: none;
+}
+
+.tabs a {
+    color: #FEFCEF !important;
+    transition: all 0.2s !important;
+}
+
+.active-tab {
+    background-color: rgba(0,0,0, .2);
+    
+}
+.active-a {
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.card .card-action {
+    border-top: none !important;
+    padding-top: 5px;
+    padding: 7px 21px;
+}
+
+button:hover {
+    transition: all 0.3s;
+    opacity: 0.9;
+}
+.exit-btn{
+    transition: all 0.3s;
+}
+.exit-btn:hover{
+    transition: all 0.3s;
+    color:#F35531;
+    transform: scale(1.3);
+    
+}
+.spinner {
+    position: absolute !important;
+    right: 50%;
+    transform: translateX(50%);
+    top: 70px;
+    z-index: 1400;
+}
+.messageFrom {
+    display: flex;
+    justify-content: flex-end;
+}
+.messageFrom div {
+    background-color: rgba(0,0,0, .2);
+}
+.nameUser{
+    color: gray;
+    position: absolute;
+    font-size: 9px;
+    top: 3px;
+}
+.nameUser-self{
+    color: #1E232B;
+}
+.inform-panel{
+    width: 180px;
+    position: fixed;
+    top: 66px;
+    left: 43px;
+}
+.collapsible {
+    border-radius: 10px !important;
+    border-right: none !important; 
+    border-left: none !important;
+}
+.collapsible-header{
+    border-radius: 10px !important;
+    align-items: center;
+}
+.collapsible-header i{
+    margin-right: 5px;
+}
+.collapsible span.badge{
+    font-size: 18px !important;
+}
+.collapsible-body{
+    padding: 0px !important;
+    border-bottom: none !important;
+}
+.collection.with-header{
+    border-radius: 10px;
+}
+.collection.with-header .collection-item {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.privat-header{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.link-to-user:hover{
+    background-color: #FEFCEF;
+}
+
+.icons-block {
+    display: flex;
+    align-items: center;
+}
+.forgot{
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.forgot-block{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.forgot:hover{
+    color: #FEFCEF;
+    transition: all 0.4s;
+}
+
+
+/* ////////// */
+.cssload-fond{
+	position:relative;
+	margin: auto;
+}
+
+.cssload-container-general
+{
+	animation:cssload-animball_two 1.15s infinite;
+		-o-animation:cssload-animball_two 1.15s infinite;
+		-ms-animation:cssload-animball_two 1.15s infinite;
+		-webkit-animation:cssload-animball_two 1.15s infinite;
+		-moz-animation:cssload-animball_two 1.15s infinite;
+	width:43px; height:43px;
+}
+.cssload-internal
+{
+	width:43px; height:43px; position:absolute;
+}
+.cssload-ballcolor
+{
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+}
+.cssload-ball_1, .cssload-ball_2, .cssload-ball_3, .cssload-ball_4
+{
+	position: absolute;
+	animation:cssload-animball_one 1.15s infinite ease;
+		-o-animation:cssload-animball_one 1.15s infinite ease;
+		-ms-animation:cssload-animball_one 1.15s infinite ease;
+		-webkit-animation:cssload-animball_one 1.15s infinite ease;
+		-moz-animation:cssload-animball_one 1.15s infinite ease;
+}
+.cssload-ball_1
+{
+	background-color:rgb(203,32,37);
+	top:0; left:0;
+}
+.cssload-ball_2
+{
+	background-color:rgb(248,179,52);
+	top:0; left:23px;
+}
+.cssload-ball_3
+{
+	background-color:rgb(0,160,150);
+	top:23px; left:0;
+}
+.cssload-ball_4
+{
+	background-color:rgb(151,191,13);
+	top:23px; left:23px;
+}
+.write-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    color: black;
+}
+
+ /* more point */
+.loading{
+    position: absolute;
+    font-weight: 600;
+    font-size: x-large;
+}
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+@keyframes ellipsis {
+to {
+    width: 1.25em;    
+}
+}
+
+@-webkit-keyframes ellipsis {
+to {
+    width: 1.25em;    
+}
+}
+
+
+
+
+@keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@-o-keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@-ms-keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@-webkit-keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@-moz-keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@keyframes cssload-animball_two
+{
+	0%{transform:rotate(0deg) scale(1);}
+	50%{transform:rotate(360deg) scale(1.3);}
+	100%{transform:rotate(720deg) scale(1);}
+}
+
+@-o-keyframes cssload-animball_two
+{
+	0%{-o-transform:rotate(0deg) scale(1);}
+	50%{-o-transform:rotate(360deg) scale(1.3);}
+	100%{-o-transform:rotate(720deg) scale(1);}
+}
+
+@-ms-keyframes cssload-animball_two
+{
+	0%{-ms-transform:rotate(0deg) scale(1);}
+	50%{-ms-transform:rotate(360deg) scale(1.3);}
+	100%{-ms-transform:rotate(720deg) scale(1);}
+}
+
+@-webkit-keyframes cssload-animball_two
+{
+	0%{-webkit-transform:rotate(0deg) scale(1);}
+	50%{-webkit-transform:rotate(360deg) scale(1.3);}
+	100%{-webkit-transform:rotate(720deg) scale(1);}
+}
+
+@-moz-keyframes cssload-animball_two
+{
+	0%{-moz-transform:rotate(0deg) scale(1);}
+	50%{-moz-transform:rotate(360deg) scale(1.3);}
+	100%{-moz-transform:rotate(720deg) scale(1);}
+}

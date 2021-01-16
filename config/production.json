@@ -1,0 +1,7 @@
+{
+    "port": 5000,
+    "mongoUri": "mongodb://:1234567A@cluster0-shard-00-00.sddbg.mongodb.net:27017,cluster0-shard-00-01.sddbg.mongodb.net:27017,cluster0-shard-00-02.sddbg.mongodb.net:27017/appChat?ssl=true&replicaSet=atlas-12yqu1-shard-0&authSource=admin&retryWrites=true&w=majority",
+    "jwtSecret": " chat mern",
+    "baseUri": "http://localhost:3000",
+    "api_sendgrid": "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"
+}
